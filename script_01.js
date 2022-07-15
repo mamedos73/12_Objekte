@@ -23,9 +23,30 @@
 
 /***** Objekte 1 Daten/Funktionen *******/
 
+let person =
+        {
+                firstName: "Muhammed",
+                familyName: "Dakkak",
+                salary: [120000, 160000],
+                permission: true,
+                sayHello:
+                function() {
+                        return "Hi, ich bin " + this.firstName + "!"
+                }
 
 
+        };
 
+// output(person);
+// output(person.firstName);
+// output(person.familyName);
+
+// const txt =     "Ich bin " + person.firstName + " " +
+//                 person.familyName + " und verdiene " +
+//                 person.salary[1] + " p.a.";
+
+// output(txt);
+output(person.sayHello());
 
 /** Ausgabe */
 function output(inputData) {
